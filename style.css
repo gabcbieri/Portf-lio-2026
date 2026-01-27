@@ -258,3 +258,113 @@ nav a {
 .modal-buttons a {
     text-decoration: none;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+
+    header {
+        padding: 20px 40px;
+    }
+
+    .hero {
+        padding: 60px 40px;
+    }
+
+    .skills {
+        padding: 0 40px;
+        gap: 20px;
+    }
+
+    .resume-services {
+        gap: 40px;
+        padding: 60px 40px;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .track img {
+        width: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* Header */
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav a {
+        margin-left: 15px;
+        font-size: 0.9rem;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 120px 20px 40px;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 1.4rem;
+        line-height: 1.4;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        margin-right: 0;
+    }
+
+    /* Skills */
+    .skills {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    /* Resume + Services */
+    .resume-services {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+        gap: 50px;
+    }
+
+    /* Services grid */
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Portfolio */
+    .portfolio {
+        padding: 40px 20px;
+    }
+
+    .carousel {
+        gap: 10px;
+    }
+
+    .track img {
+        width: 200px;
+    }
+
+    /* Modal */
+    .modal {
+        width: 90%;
+        max-width: 320px;
+    }
+}
