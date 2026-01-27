@@ -32,12 +32,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: linear-gradient(
-        90deg,
-        rgba(142, 113, 231, 0.75),
-        rgba(57, 36, 153, 0.75)
-    );
-    backdrop-filter: blur(10px);
+    background: transparent
 }
 
 .header-left {
@@ -239,35 +234,6 @@ nav a {
 
 @media (max-width: 768px) {
 
-    /* Remove fundo no mobile */
-    .menu {
-        background: transparent;
-        backdrop-filter: none;
-    }
-
-    /* Botão menu */
-    .menu-toggle {
-        display: block;
-    }
-
-    nav {
-        position: fixed;
-        top: 0;
-        left: -100%;
-        width: 260px;
-        height: 100vh;
-        background: #1a1f2b;
-        display: flex;
-        flex-direction: column;
-        padding: 100px 20px;
-        gap: 20px;
-        transition: left 0.3s ease;
-    }
-
-    nav.active {
-        left: 0;
-    }
-
     .skills {
         flex-direction: column;
         padding: 0 20px;
@@ -284,5 +250,18 @@ nav a {
 
     .portfolio {
         padding: 40px 20px;
+    }
+}
+
+/* ================= MOBILE - OCULTAR HEADER E NAV ================= */
+@media (max-width: 770px) {
+    /* Oculta todo o header */
+    header.menu {
+        display: none;
+    }
+
+    /* Ajusta o padding-top do body para que o conteúdo não fique "pulando" */
+    body {
+        padding-top: 20px; /* você pode ajustar esse valor se quiser mais espaço */
     }
 }
