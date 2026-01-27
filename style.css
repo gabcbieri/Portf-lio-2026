@@ -17,8 +17,6 @@ img {
     height: auto;
 }
 
-/* ================= HEADER ================= */
-
 header {
     display: flex;
     justify-content: space-between;
@@ -32,7 +30,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: transparent
+    background: transparent;
 }
 
 .header-left {
@@ -56,7 +54,6 @@ nav a {
     text-decoration: none;
 }
 
-/* Botão menu mobile */
 .menu-toggle {
     display: none;
     background: none;
@@ -65,8 +62,6 @@ nav a {
     color: #fff;
     cursor: pointer;
 }
-
-/* ================= HERO ================= */
 
 .hero {
     display: flex;
@@ -78,11 +73,12 @@ nav a {
     color: #7f5af0;
 }
 
-/* ================= BOTÕES ================= */
-
 .btn {
     padding: 12px 25px;
     border-radius: 10px;
+    text-decoration: none; 
+    display: inline-block;
+    text-align: center;
 }
 
 .primary {
@@ -102,8 +98,6 @@ nav a {
     padding: 20px 30px;
     margin: 20px 0;
 }
-
-/* ================= SKILLS ================= */
 
 .skills {
     display: flex;
@@ -130,8 +124,6 @@ nav a {
     height: 100%;
     background: linear-gradient(90deg,#7f5af0,#5a3de2);
 }
-
-/* ================= RESUME + SERVICES ================= */
 
 .resume-services {
     display: grid;
@@ -163,8 +155,6 @@ nav a {
     border-radius: 20px;
 }
 
-/* ================= PORTFOLIO ================= */
-
 .portfolio {
     padding: 80px;
 }
@@ -192,8 +182,6 @@ nav a {
     border: none;
     cursor: pointer;
 }
-
-/* ================= MODAL ================= */
 
 .modal-overlay {
     position: fixed;
@@ -223,7 +211,21 @@ nav a {
     position: relative;
 }
 
-/* ================= RESPONSIVO ================= */
+.modal-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+    margin-top: 20px;
+}
+
+
+.modal-buttons .btn {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+    text-decoration: none; 
+    margin: 0; 
+}
 
 @media (max-width: 1024px) {
     header { padding: 20px 40px; }
@@ -233,35 +235,29 @@ nav a {
 }
 
 @media (max-width: 768px) {
-
-    .skills {
-        flex-direction: column;
-        padding: 0 20px;
-    }
-
-    .resume-services {
-        grid-template-columns: 1fr;
-        padding: 40px 20px;
-    }
-
-    .service-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .portfolio {
-        padding: 40px 20px;
-    }
+    .skills { flex-direction: column; padding: 0 20px; }
+    .resume-services { grid-template-columns: 1fr; padding: 40px 20px; }
+    .service-grid { grid-template-columns: 1fr; }
+    .portfolio { padding: 40px 20px; }
 }
 
-/* ================= MOBILE - OCULTAR HEADER E NAV ================= */
 @media (max-width: 770px) {
-    /* Oculta todo o header */
-    header.menu {
-        display: none;
+    header.menu { display: none; }
+    body { padding-top: 20px; }
+}
+
+@media (max-width: 480px) {
+    .modal {
+        width: 90%;
+        padding: 20px;
     }
 
-    /* Ajusta o padding-top do body para que o conteúdo não fique "pulando" */
-    body {
-        padding-top: 20px; /* você pode ajustar esse valor se quiser mais espaço */
+    .modal-buttons {
+        gap: 15px;
+    }
+
+    .modal-buttons .btn {
+        font-size: 16px;
+        padding: 15px 0;
     }
 }

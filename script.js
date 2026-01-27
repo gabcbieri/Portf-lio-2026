@@ -11,22 +11,37 @@ document.querySelector('.prev').onclick = () => {
     track.style.transform = `translateX(${-280 * index}px)`;
 };
 
-const openModal = document.getElementById('openModal');
-const closeModal = document.getElementById('closeModal');
-const modal = document.getElementById('modal');
+// MODAL CONTATO
+const btnContato = document.getElementById('openModal');
+const modalContato = document.getElementById('modal');
 
-openModal.addEventListener('click', () => {
-    modal.classList.add('active');
+btnContato.addEventListener('click', () => {
+    modalContato.classList.add('active');
 });
 
-closeModal.addEventListener('click', () => {
-    modal.classList.remove('active');
-});
-
-modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-        modal.classList.remove('active');
+modalContato.addEventListener('click', (e) => {
+    if (e.target === modalContato) {
+        modalContato.classList.remove('active');
     }
+});
+
+// MODAL GITHUB
+const btnGithub = document.querySelector('.btn.outline'); // botão "Ver meu trabalho"
+const modalGithub = document.getElementById('modalGithub');
+const cancelGithub = document.getElementById('cancelGithub');
+
+btnGithub.addEventListener('click', () => {
+    modalGithub.classList.add('active');
+});
+
+modalGithub.addEventListener('click', (e) => {
+    if (e.target === modalGithub) {
+        modalGithub.classList.remove('active');
+    }
+});
+
+cancelGithub.addEventListener('click', () => {
+    modalGithub.classList.remove('active');
 });
 
 const menuToggle = document.getElementById('menuToggle');
