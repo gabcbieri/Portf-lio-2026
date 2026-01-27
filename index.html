@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gabriella Barbieri | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header class="menu">
+    <div class="logo">GAB<span>.</span>dev</div>
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#resume">Resumo</a>
+        <a href="#services">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contact">Contate-me</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h1>Gabriella Barbieri | <span>Desenvolvedora Full-Stack</span></h1>
+        <p>Curitiba, Paraná • Freelancer disponível</p>
+
+        <div class="buttons">
+            <button class="btn primary" id="openModal">Contate-me</button>
+            <button class="btn outline">Ver meu trabalho</button>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills">
+    <div class="skill-card">
+        <h3>Desenvolvimento Backend</h3>
+        <div class="progress"><span>MySQL</span><div><b style="width:76%"></b></div></div>
+        <div class="progress"><span>PHP</span><div><b style="width:84%"></b></div></div>
+        <div class="progress"><span>Python</span><div><b style="width:79%"></b></div></div>
+    </div>
+
+    <div class="skill-card">
+        <h3>Desenvolvimento Frontend</h3>
+        <div class="progress"><span>React</span><div><b style="width:30%"></b></div></div>
+        <div class="progress"><span>JavaScript</span><div><b style="width:80%"></b></div></div>
+        <div class="progress"><span>HTML / CSS</span><div><b style="width:85%"></b></div></div>
+    </div>
+</section>
+
+<!-- RESUME + SERVICES -->
+<div class="resume-services">
+    <section class="resume" id="resume">
+        <h2>Resumo</h2>
+
+        <div class="timeline">
+            <div class="item">
+                <h4>Formada em Análise e Desenvolvimento de Sistemas</h4>
+                <p>Universidade Positivo</p>
+            </div>
+            <div class="item">
+                <h4>Analista de Dados - Company</h4>
+                <p>Automações em Python e análise de dados críticos</p>
+            </div>
+            <div class="item">
+                <h4>Bootcamp de Desenvolvimento Backend</h4>
+                <p>Node.js, APIs, PHP, Python e databases.</p>
+            </div>
+            <div class="item">
+                <h4>Desenvolvedor Full-Stack</h4>
+                <p>Sistemas e implantações de ponta a ponta</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Serviços</h2>
+
+        <div class="service-grid">
+            <div class="service-card">
+                <h4>Velocidade e Otimização</h4>
+                <p>Otimização de SEO, desempenho e experiência do usuário</p>
+            </div>
+
+            <div class="service-card">
+                <h4>Soluções Full-Stack</h4>
+                <p>Desenvolvimento frontend até deploy no backend</p>
+            </div>
+
+            <div class="service-card">
+                <h4>Desenvolvimento Backend</h4>
+                <p>APIs e banco de dados seguros</p>
+            </div>
+
+            <div class="service-card">
+                <h4>Desenvolvimento Frontend</h4>
+                <p>Interfaces modernas e responsivas</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- PORTFOLIO -->
+<section class="portfolio" id="portfolio">
+    <h2>Meu portfólio</h2>
+
+    <div class="carousel">
+        <button class="nav prev">‹</button>
+
+        <div class="track">
+            <img src="img/p1.png">
+            <img src="img/p2.png">
+            <img src="img/p3.png">
+            <img src="img/p4.png">
+            <img src="img/p5.png">
+            <img src="img/p6.png">
+        </div>
+
+        <button class="nav next">›</button>
+    </div>
+</section>
+
+<!-- MODAL CONTATO -->
+<div class="modal-overlay" id="modal">
+    <div class="modal">
+        <button class="close-modal" id="closeModal">×</button>
+        <h3>Como deseja entrar em contato?</h3>
+
+        <div class="modal-buttons">
+            <a href="mailto:gabriella@email.com" class="btn outline">
+                <i class="fa-solid fa-envelope"></i>
+                Email
+            </a>
+
+            <a href="https://wa.me/5541999999999" target="_blank" class="btn primary">
+                <i class="fa-brands fa-whatsapp"></i>
+                WhatsApp
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
