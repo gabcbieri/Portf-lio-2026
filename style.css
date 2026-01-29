@@ -135,6 +135,7 @@ nav a {
 .resume,
 .services {
     padding: 0;
+    margin: 30px 0;
 }
 
 .timeline .item {
@@ -143,10 +144,19 @@ nav a {
     padding-left: 20px;
 }
 
+.sevices{
+    padding: 80px;
+}
+
 .service-grid {
-    display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 20px;
+    display: flex;
+    gap: 30px;
+    padding: 0 80px;
+}
+
+.services h2 {
+    padding-left: 80px; 
 }
 
 .service-card {
@@ -158,6 +168,7 @@ nav a {
 .portfolio {
     padding: 80px;
 }
+
 
 .carousel {
     display: flex;
