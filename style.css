@@ -99,12 +99,6 @@ nav a {
     margin: 20px 0;
 }
 
-.skills {
-    display: flex;
-    gap: 30px;
-    padding: 0 80px;
-}
-
 .skill-card {
     background: rgba(255,255,255,.06);
     padding: 25px;
@@ -115,7 +109,7 @@ nav a {
 .resume-services .skills {
     display: grid;
     gap: 30px;
-    padding: 0 10px; 
+    padding: 0 80px; 
 }
 
 .progress div {
@@ -151,13 +145,9 @@ nav a {
     padding-left: 20px;
 }
 
-.sevices{
-    padding: 80px;
-}
-
 .service-grid {
+    display: grid;
     grid-template-columns: repeat(2,1fr);
-    display: flex;
     gap: 30px;
     padding: 0 80px;
 }
