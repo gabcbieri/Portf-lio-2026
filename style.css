@@ -115,7 +115,7 @@ nav a {
 .resume-services .skills {
     display: grid;
     gap: 30px;
-    padding: 0 10px; /* ou 0 80px para alinhar exatamente com outros blocos */
+    padding: 0 10px; 
 }
 
 .progress div {
@@ -132,6 +132,7 @@ nav a {
 }
 
 .resume-services {
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
